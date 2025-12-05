@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FellDuell – Galerie</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="index.html">
+          <img src="bilder/logo/logo-gold.jpeg" alt="FellDuell Logo" />
+          <div>
+            <p class="logo-title">FellDuell</p>
+            <p class="logo-subtitle">Feinster Hundesalon</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="galerie.html" class="active">Galerie</a></li>
+            <li><a href="team.html">Über mich</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="kontakt.html#kontakt">Termin buchen</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero secondary-hero" id="galerie">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Galerie</p>
+            <h1>Liebevoll gepflegte Fellnasen</h1>
+            <p>
+              Ein Einblick in unseren Salonalltag: vom Baden über das Föhnen bis zum finalen Schliff. Hier siehst du,
+              wie entspannt und stolz unsere Vierbeiner den Besuch verlassen.
+            </p>
+            <div class="hero-actions">
+              <a class="cta" href="kontakt.html#kontakt">Termin anfragen</a>
+              <a class="ghost" href="#bilder">Zu den Bildern</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="bilder">
+        <div class="container">
+          <p class="eyebrow">Pflegemomente</p>
+          <h2>Auswahl aus unserem Alltag</h2>
+          <p class="lead">Hunde verschiedenster Rassen und Größen – alle mit Ruhe, Herz und Präzision gestylt.</p>
+          <div class="gallery-grid">
+            <figure>
+              <img src="bilder/galerie/20240921_164711.jpg" alt="Hund mit Schleife nach dem Grooming" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250325_143124.jpg" alt="Kleiner Hund frisch frisiert" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250623_115324.jpg" alt="Hund beim Föhnen auf dem Tisch" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250704_093345.jpg" alt="Hund mit modernem Schnitt" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250704_093355.jpg" alt="Detailaufnahme gepflegter Pfoten" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250714_122953.jpg" alt="Hund mit konturiertem Schnitt" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250722_135520.jpg" alt="Entspannter Hund nach der Pflege" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250807_115944.jpg" alt="Gepflegter Hund mit Schleife" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250807_120012.jpg" alt="Hund mit Sommer-Style" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250813_102717.jpg" alt="Hund mit glänzendem Fell" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20250814_110803.jpg" alt="Hund nach dem Bad" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/20251111_110821.jpg" alt="Stolze Fellnase nach dem Styling" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/IMG-20241109-WA0056.jpg" alt="Hund mit Schleifen-Accessoire" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/IMG-20241109-WA0057.jpg" alt="Frisch gepflegter Hund im Salon" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="bilder/galerie/thumbnail_20240314_144728.jpg" alt="Hund mit kürzerem Schnitt" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> Hundesalon FellDuell</p>
+        <div class="footer-links">
+          <a href="impressum.html">Impressum</a>
+          <a href="pdf/DatenschutzPDF.pdf">Datenschutz</a>
+          <a href="pdf/AGBpdf.pdf">AGB</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FellDuell – Impressum</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="index.html">
+          <img src="bilder/logo/logo-gold.jpeg" alt="FellDuell Logo" />
+          <div>
+            <p class="logo-title">FellDuell</p>
+            <p class="logo-subtitle">Feinster Hundesalon</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="team.html">Über mich</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="kontakt.html#kontakt">Termin buchen</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero secondary-hero legal-hero" id="impressum">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Impressum</p>
+            <h1>Angaben gemäß § 5 TMG</h1>
+            <p class="lead">
+              Musterangaben für den Hundesalon FellDuell. Bitte mit deinen echten Unternehmensdaten ersetzen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="legal">
+        <div class="container legal-grid">
+          <article>
+            <h3>Dienstanbieter</h3>
+            <p>
+              Hundesalon FellDuell<br />
+              Inh. Katharina Musterfrau<br />
+              Musterstraße 12<br />
+              12345 Musterstadt
+            </p>
+            <p>
+              Telefon: <a href="tel:+49123456789">+49 123 456 789</a><br />
+              E-Mail: <a href="mailto:hallo@fellduell.de">hallo@fellduell.de</a>
+            </p>
+            <p>USt-IdNr.: DE123456789</p>
+          </article>
+
+          <article>
+            <h3>Berufsbezogene Angaben</h3>
+            <ul class="legal-list">
+              <li>Aufsichtsbehörde: Veterinäramt Musterstadt, Musterweg 5, 12345 Musterstadt</li>
+              <li>Berufshaftpflicht: Muster Versicherung AG, Haftungssumme 3 Mio. EUR, räumlicher Geltungsbereich: Deutschland</li>
+              <li>Berufsbezeichnung: Groomer/Hundesalon-Inhaberin (nicht zulassungspflichtig)</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Verantwortlich für den Inhalt</h3>
+            <p>
+              Katharina Musterfrau<br />
+              Anschrift wie oben
+            </p>
+            <h3>EU-Streitschlichtung</h3>
+            <p>
+              Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noreferrer">https://ec.europa.eu/consumers/odr</a>.
+            </p>
+            <p>
+              Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
+              Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+          </article>
+
+          <article>
+            <h3>Haftungsausschluss</h3>
+            <p>
+              Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.
+              Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+            </p>
+            <p>Stand: Januar 2025</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> Hundesalon FellDuell</p>
+        <div class="footer-links">
+          <a href="impressum.html">Impressum</a>
+          <a href="pdf/DatenschutzPDF.pdf">Datenschutz</a>
+          <a href="pdf/AGBpdf.pdf">AGB</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

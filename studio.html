@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FellDuell – Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="index.html">
+          <img src="bilder/logo/logo-gold.jpeg" alt="FellDuell Logo" />
+          <div>
+            <p class="logo-title">FellDuell</p>
+            <p class="logo-subtitle">Feinster Hundesalon</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="team.html">Über mich</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="kontakt.html#kontakt">Termin buchen</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="studio" id="studio">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Studio Flair</p>
+            <h2>Sanfte Farben, ruhige Hände</h2>
+            <p>
+              Unser Hundesalon verbindet Hygge-Gefühl mit professionellem Equipment. Wir arbeiten
+              mit 14 präzisionsgeschliffenen Spezialscheren, einer maßgefertigten Spa-Badewanne
+              und dem
+              <a
+                href="https://transgroom.com/de/groom-x-zeppelin-waterblazer-met-stand?utm_source=google&utm_campaign=&utm_medium=cpc&utm_content=&utm_term=&gad_source=1&gad_campaignid=23002163702&gclid=CjwKCAiAlMHIBhAcEiwAZhZBUnMcr4J-qXWBNzn4OJBpcqDx0Luss8BQJFSJZogc7jEhp8pBq4ThCxoCR3IQAvD_BwE"
+                target="_blank"
+                rel="noreferrer"
+                >Groom‑X Zeppelin Standföhn</a
+              >
+              für seidige Ergebnisse ohne Stress.
+            </p>
+            <ul class="feature-list">
+              <li>14 Spezialscheren für Konturen, Thinning &amp; Detailarbeit</li>
+              <li>Edelstahl-Badewanne mit Spa-Massagefunktion</li>
+              <li>Standföhn Groom‑X Zeppelin für kontrolliertes Trocknen</li>
+              <li>Pflegeprodukte von Yuup!, Nature’s Specialties &amp; Groom Professional</li>
+              <li>Separate Wohlfühlbereiche mit LED-Atmosphäre</li>
+            </ul>
+          </div>
+          <div class="studio-photo">
+            <p class="bubble bubble-top">Ankommen &amp; durchatmen</p>
+            <p class="bubble bubble-bottom">Zeit für Fellmomente</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="studio-gallery">
+            <article>
+              <img src="bilder/studio-scissors.jpg" alt="Spezialscheren-Set für präzises Hundestyling" />
+              <h3>14 Spezialscheren</h3>
+              <p>Konturen, Thinning und Detailarbeit sind dank unseres handverlesenen Sets für jede Fellstruktur möglich.</p>
+            </article>
+            <article>
+              <img src="bilder/studio-tub.jpg" alt="Edelstahl-Spabadewanne für Hunde" />
+              <h3>Spa-Badewanne</h3>
+              <p>Die maßgefertigte Edelstahlwanne mit Massagefunktion sorgt für sichere, entspannte Baden &amp; Wellnessmomente.</p>
+            </article>
+            <article>
+              <img src="bilder/studio-dryer.jpg" alt="Groom-X Zeppelin Standföhn beim Hundestyling" />
+              <h3>Groom‑X Zeppelin</h3>
+              <p>Der Standföhn trocknet kontrolliert und schonend – perfekt dosierter Luftstrom ohne Hitzestress.</p>
+            </article>
+            <article>
+              <img src="bilder/studio-products.jpg" alt="Pflegeprodukte von Yuup!, Nature’s Specialties und Groom Professional" />
+              <h3>Premiumprodukte</h3>
+              <p>Yuup!, Nature’s Specialties &amp; Groom Professional begleiten jede Behandlung passend zu Fell und Haut.</p>
+            </article>
+            <article>
+              <img src="bilder/studio-led.jpg" alt="Getrennter Wohlfühlbereich mit LED-Stimmung" />
+              <h3>LED-Wohlfühlzonen</h3>
+              <p>Separate Bereiche mit sanfter LED-Atmosphäre geben nervösen Fellnasen Zeit zum Runterkommen.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> Hundesalon FellDuell</p>
+        <div class="footer-links">
+          <a href="impressum.html">Impressum</a>
+          <a href="pdf/DatenschutzPDF.pdf">Datenschutz</a>
+          <a href="pdf/AGBpdf.pdf">AGB</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      // Dynamische Darstellung der Studio-Ausstattung
+      const equipment = [
+        {
+          title: "14 Spezialscheren",
+          detail: "Konturen, Thinning, Detailarbeit – abgestimmt auf jede Fellstruktur.",
+          label: "Präzision"
+        },
+        {
+          title: "Spa-Badewanne",
+          detail: "Edelstahlwanne mit Massagefunktion für entspannte Waschrituale.",
+          label: "Wellness"
+        },
+        {
+          title: "Groom‑X Zeppelin",
+          detail: "Standföhn für kontrolliertes, stressfreies Trocknen ohne Hitze.",
+          label: "Schonend"
+        },
+        {
+          title: "Premiumprodukte",
+          detail: "Yuup!, Nature’s Specialties & Groom Professional für jede Fell- und Hautbedürfnis.",
+          label: "Pflege"
+        },
+        {
+          title: "LED-Wohlfühlzonen",
+          detail: "Sanfte Beleuchtung und separate Bereiche für sensible Fellnasen.",
+          label: "Ruhe"
+        }
+      ];
+
+      const grid = document.getElementById("equipment-grid");
+      if (grid) {
+        grid.innerHTML = equipment
+          .map(
+            (item) => `
+              <article class="equip-card">
+                <p class="equip-label">${item.label}</p>
+                <h3>${item.title}</h3>
+                <p>${item.detail}</p>
+              </article>
+            `
+          )
+          .join("");
+      }
+
+      // Scroll-Reveal-Effekt
+      const revealItems = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("reveal-in");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      revealItems.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

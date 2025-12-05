@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FellDuell – Kontakt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="index.html">
+          <img src="bilder/logo/logo-gold.jpeg" alt="FellDuell Logo" />
+          <div>
+            <p class="logo-title">FellDuell</p>
+            <p class="logo-subtitle">Feinster Hundesalon</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="team.html">Über mich</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="kontakt.html#kontakt">Termin buchen</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact" id="kontakt">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Termin &amp; Beratung</p>
+            <h2>Wir freuen uns auf eure Fellnasen</h2>
+            <p>
+              Ruf uns an, schreib eine Nachricht oder komm auf einen Kennenlern-Kaffee vorbei –
+              wir beraten dich individuell und ehrlich.
+            </p>
+            <div class="contact-info">
+              <p><strong>Telefon:</strong> <a href="tel:+49123456789">+49 123 456 789</a></p>
+              <p><strong>E-Mail:</strong> <a href="mailto:hallo@fellduell.de">hallo@fellduell.de</a></p>
+            </div>
+          </div>
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Vor- und Nachname" />
+            </label>
+            <label>
+              Fellnase
+              <input type="text" name="dog" placeholder="Hunderasse oder Mix" />
+            </label>
+            <label>
+              Nachricht
+              <textarea name="message" rows="4" placeholder="Wobei dürfen wir helfen?"></textarea>
+            </label>
+            <button type="submit" class="cta">Unverbindlich anfragen</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> Hundesalon FellDuell</p>
+        <div class="footer-links">
+          <a href="impressum.html">Impressum</a>
+          <a href="pdf/DatenschutzPDF.pdf">Datenschutz</a>
+          <a href="pdf/AGBpdf.pdf">AGB</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
